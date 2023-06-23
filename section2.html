@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-image: linear-gradient(
+          to right bottom,
+          #6b8cd1,
+          #5572ae,
+          #405a8d,
+          #2c426d,
+          #182c4f,
+          #102241,
+          #081934,
+          #020e27,
+          #020c24,
+          #030b22,
+          #02091f,
+          #02071d
+        );
+      }
+
+      .top-bar {
+        background-color: #f9f9f9;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .top-bar a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #333333;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        text-align: center;
+        color: white;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .grid-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+      }
+
+      .grid {
+        flex-basis: 80%;
+        padding: 10px;
+        background-color: #263751;
+        transition: transform 0.3s, background-color 0.3s;
+        cursor: pointer;
+        margin: 10px;
+      }
+
+      .grid:hover {
+        transform: scale(1.05);
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+
+      @media screen and (min-width: 748px) {
+        .grid-container {
+          flex-direction: row;
+          justify-content: space-between;
+        }
+
+        .grid {
+          flex-basis: 30%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top-bar">
+      <a href="./index.html" class="tab-btn">Section 1</a>
+      <a href="./section2.html" class="tab-btn">Section 2</a>
+      <a href="./section3.html" class="tab-btn">Section 3</a>
+      <a href="#section4" class="tab-btn">Section 4</a>
+    </div>
+    <div class="container">
+      <img
+        src="https://img.freepik.com/premium-vector/whale-container-computer-docker-developer-app-concept-business-digital-open-source-program-data_115739-1377.jpg?w=740"
+        alt="Image"
+      />
+      <div class="grid-container">
+        <div class="grid">
+          <h3>Install The Akash Agent</h3>
+          <p>
+            Datacenters and companies with underutilized capacity install the
+            Akash agent on servers they want to add to the network. Once
+            registered with the network, they become available for tenants to
+            deploy containerized workloads to
+          </p>
+        </div>
+        <div class="grid">
+          <h3>Allocation By Auction</h3>
+          <p>
+            Deployment slots are allocated via an auction process that begins
+            with a user defining the deployment criteria (resources, topology,
+            price) in a declarative file posted to the Akash blockchain.
+            Providers then programmatically bid on the deployment, with the low
+            bid winning and creating a lease between tenant and provider, again
+            written to the chain
+          </p>
+        </div>
+        <div class="grid">
+          <h3>Workload Distribution</h3>
+          <p>
+            Workloads are then distributed off chain via Akash's peer-to-peer
+            file sharing protocol, and a secure overlay network established.
+            Once live, the agreed-upon count of Akash tokens is transferred from
+            tenant to provider periodically for as long as the workload is live,
+            as determined by the network
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

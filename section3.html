@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Details</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f2f2f2;
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .top-bar {
+        width: 100%;
+        background-color: #f9f9f9;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+      }
+
+      .top-bar a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #333333;
+      }
+
+      .container-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 50px;
+      }
+
+      .container {
+        width: 300px;
+        padding: 20px;
+        margin: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: all 0.3s ease;
+        overflow: auto;
+      }
+
+      .container:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .profile-pic {
+        width: 250px;
+        height: 270px;
+        border-radius: 20px;
+        margin: 0 auto 10px;
+      }
+
+      .name {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #333333;
+      }
+
+      .about {
+        font-size: 18px;
+        margin-bottom: 20px;
+        color: #777777;
+      }
+
+      .social {
+        display: flex;
+        justify-content: center;
+      }
+
+      .social a {
+        display: inline-block;
+        margin: 0 8px;
+        color: #777777;
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+
+      .social a:hover {
+        color: #333333;
+      }
+
+      @media (max-width: 748px) {
+        .container {
+          width: 80%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top-bar">
+      <a href="./index.html" class="tab-btn">Section 1</a>
+      <a href="./section2.html" class="tab-btn">Section 2</a>
+      <a href="./section3.html" class="tab-btn">Section 3</a>
+      <a href="#section4" class="tab-btn">Section 4</a>
+    </div>
+    <div class="container-wrapper">
+      <div class="container">
+        <img
+          src="./section3/img1.jpg"
+          alt="Profile Picture"
+          class="profile-pic"
+        />
+        <div class="name">John Doe</div>
+        <div class="about">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+          vestibulum tincidunt augue, vel suscipit elit. Nunc non sapien vel
+          nulla sollicitudin pellentesque.
+        </div>
+        <div class="social">
+          <a href="https://www.facebook.com/johndoe" target="_blank"
+            >Facebook</a
+          >
+          <a href="https://www.twitter.com/johndoe" target="_blank">Twitter</a>
+          <a href="https://www.instagram.com/johndoe" target="_blank"
+            >Instagram</a
+          >
+        </div>
+      </div>
+
+      <div class="container">
+        <img
+          src="./section3/img2.jpg"
+          alt="Profile Picture"
+          class="profile-pic"
+        />
+        <div class="name">Jane Smith</div>
+        <div class="about">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+          Quisque vestibulum tincidunt augue, vel suscipit elit. Nunc non sapien
+          vel nulla sollicitudin pellentesque.
+        </div>
+        <div class="social">
+          <a href="https://www.facebook.com/janesmith" target="_blank"
+            >Facebook</a
+          >
+          <a href="https://www.twitter.com/janesmith" target="_blank"
+            >Twitter</a
+          >
+          <a href="https://www.instagram.com/janesmith" target="_blank"
+            >Instagram</a
+          >
+        </div>
+      </div>
+
+      <div class="container">
+        <img
+          src="./section3/img3.jpg"
+          alt="Profile Picture"
+          class="profile-pic"
+        />
+        <div class="name">Alex Johnson</div>
+        <div class="about">
+          At vero eos et accusamus et iusto odio dignissimos ducimus. Quisque
+          vestibulum tincidunt augue, vel suscipit elit. Nunc non sapien vel
+          nulla sollicitudin pellentesque.
+        </div>
+        <div class="social">
+          <a href="https://www.facebook.com/alexjohnson" target="_blank"
+            >Facebook</a
+          >
+          <a href="https://www.twitter.com/alexjohnson" target="_blank"
+            >Twitter</a
+          >
+          <a href="https://www.instagram.com/alexjohnson" target="_blank"
+            >Instagram</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
